@@ -11,7 +11,7 @@ create table DZIALY
 )
 
 select* from DZIALY
-/*zadanie 3*/
+/*zadanie 2*/
 
 ALTER TABLE DZIALY
 ADD CONSTRAINT NAZWA_DZIALU CHECK(NAZWA_DZIALU!='%[0,9]%')
