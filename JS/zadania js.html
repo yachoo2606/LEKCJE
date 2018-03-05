@@ -1,0 +1,25 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>js zadania</title>
+</head>
+<body>
+<form name="formularz">
+		Bok a: <input type="text" value="5" name="boka"/><br/>
+		bok b: <input type="text" value="5" name="bokb"><br/>
+		<input type="button" onDblClick="oblicz()" value="oblicz obwód: "/>
+		<br/>
+		<span id="wynikob"></span>
+	</form>
+<script>
+		function oblicz()
+		{
+			var a = Number(formularz.boka.value);
+			var b = Number(formularz.bokb.value);
+			var obwod = 2*a+2*b;
+			document.getElementById("wynikob").innerHTML  = "Wynik: " + obwod;
+		}
+	</script>
+</body>
+</html>
