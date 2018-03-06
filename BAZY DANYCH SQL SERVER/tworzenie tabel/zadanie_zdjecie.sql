@@ -5,7 +5,7 @@ use Muzyka
 create table PANSTWA
 (
 	Id_Panstwa varchar(3)primary key
-	check(Id_Panstwa not like'%[0-9]%'),
+	check(Id_Panstwa not like'[0-9][0-9][0-9]'),
 	Nazwa varchar(20) not null,
 )
 drop table PANSTWA
