@@ -1,0 +1,24 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>JS</title>
+	<script>
+		function ruchomy_napis()
+		{
+			var napis_ob=document.getElementById('pasek_ruchomy');
+				if(parseInt(napis_ob.style.marginLeft)<=300)
+					napis_ob.style.marginLeft='800px';
+					else
+						napis_ob.style.marginLeft=parseInt(napis_ob.style.marginLeft)-1+'px';
+		}
+		
+		window.setInterval('ruchomy_napis()',5);
+	</script>
+</head>
+<body>
+	<div style="width: 100%;background-color: aquamarine;">
+			<div id="pasek_ruchomy" style="margin-left:100px; background-color: red; width:200px; text-align: center">Zabawy matematyczne</div>
+	</div>
+</body>
+</html>

@@ -1,0 +1,34 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>JS</title>
+	<script>
+		function zmianrozmiar(id)
+		{
+			var divobj=document.getElementById(id);
+			if(divobj.style.width='150px')
+				{
+					divobj.style.width='300px';
+					divobj.style.height='200px';
+				}
+		}
+		function zmienwdol(id)
+		{
+			var divobj=document.getElementById(id);
+			if (divobj.style.width='300px')
+				{
+					divobj.style.width='150px';
+					divobj.style.height='100px';
+				}
+		}
+	</script>
+</head>
+<body>
+	<div id="a" style="width: 150px; height: 100px; background-color:aqua; float:left;" onClick="zmianrozmiar('a')" ondblClick="zmienwdol('a')">SZPITAL MEDYCZNY</div>
+	<div id="b" style="width: 150px; height: 100px; background-color:aquamarine; float:left;"  onClick="zmianrozmiar('b')" ondblClick="zmienwdol('b')">SZPITAL MEDYCZNY</div>
+	<div id="c" style="width: 150px;height: 100px;background-color: antiquewhite;float:left;" onClick="zmianrozmiar('c')" ondblClick="zmienwdol('c')">SZPITAL MEDYCZNY</div>
+	<p><br><br><br><br><br><br>Kliknij obrazek aby powiększyć tekst</p>
+	<!-- po ponownym kliknięciu ma się zmniejszyć-->
+</body>
+</html>
