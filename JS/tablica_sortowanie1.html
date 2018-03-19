@@ -1,0 +1,26 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>JS</title>
+</head>
+<body>
+	<h1 id="tablica"></h1>
+	<h2 id="posort"></h2>
+	
+	
+	<script>
+	
+	var tablica=[11,32,41,21,12,11000,2312,3214,412,4124];
+		
+		
+	function sortowanie(a,b)
+		{
+			return a>b;
+		}
+	document.getElementById('tablica').innerHTML= tablica;
+	document.getElementById('posort').innerHTML=tablica.sort(sortowanie);
+	
+	</script>
+</body>
+</html>

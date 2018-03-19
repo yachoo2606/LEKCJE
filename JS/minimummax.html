@@ -1,0 +1,52 @@
+<!doctype html>
+<html>
+<head lang="pl">
+	
+</head>
+<body>
+		<form name="formularz">
+				<label><input type="a" id="a"/> Pierwsza liczba</label><br/>
+				<label><input type="b" id="b"/> Druga liczba</label><br/>
+				<label><input type="c" id="c"/> Trzecia liczba</label><br/>
+				<label><input type="button" value=" liczba to" onclick="nejmiejsza()"/></label><br/><br/>
+		</form>
+		
+		<h1 id="wynik"></h1>
+		
+		<script>
+			
+			
+			function nejmiejsza (a,b,c)
+			{
+				var a = formularz.a.value;
+				var b = formularz.b.value;
+				var c = formularz.c.value;
+				
+				if(a<b)
+				{
+					if(a<c)
+					{
+						document.getElementById("wynik").innerHTML = "Najmniejsza jest liczba pierwsza "+ a;
+						//alert("Najemijsza jest liczba pierwsza: "+a);
+					}
+				}
+				if(b<a)
+				{
+					if(b<c)
+					{
+						document.getElementById("wynik").innerHTML = "Najmniejsza jest liczba druga "+ b;
+						//alert("Najemijsza jest liczba druga: "+b);
+					}
+				}
+				if(c<b)
+				{
+					if(c<a)
+					{
+						document.getElementById("wynik").innerHTML = "Najmniejsza jest liczba trzecia "+ c;
+						//alert("Najemijsza jest liczba trzecia: "+c);
+					}
+				}
+			}	
+		</script>
+</body>
+</html>
