@@ -1,0 +1,47 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>JS</title>
+		<style>
+			#pierwsze
+			{
+				width: 600px;
+				height: 100px;
+				border: dotted 13px blue;
+				background-color: red;
+				text-align: center;
+			}
+		
+		
+		</style>
+	</head>
+	<body>
+		<div id="pierwsze" onClick="func1()" ondblclick="func2()">
+		<h2>przykładowy tekst</h2>
+		</div>
+		<div>
+		<button type="button" onclick="pierwotne()">reset</button>
+		
+		
+		</div>
+		<script>
+		function func1()
+		{
+			var el = document.getElementById('pierwsze');
+				el.innerHTML='<h2>lewa dupa</h2>';
+		}
+		function func2()
+		{
+			var el = document.getElementById('pierwsze');
+				el.innerHTML='<h2>prawa dupa</h2>';
+		}
+		function pierwotne()
+		{
+			var el = document.getElementById('pierwsze');
+			el.innerHTML = "<h2>Przykładowy tekst</h2>";
+		}
+			//func1();
+		</script>
+	</body>
+</html>
