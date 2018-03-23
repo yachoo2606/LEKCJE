@@ -1,0 +1,60 @@
+html
+{
+	height: 100%;
+}
+body
+{
+	margin:0px;
+	height: 100%;
+}
+#tlo
+{
+	background-color:blanchedalmond;
+}
+#baner
+{
+	background: linear-gradient(blue, lightblue);
+	margin:0px;
+	padding:5px;
+	height:auto;
+	text-align: center;
+}
+.naglowek img
+{
+	position:relative;
+	left:40%;
+	right:50%;
+	height:250px;
+	text-align: center;
+}
+.naglowek
+{
+	height:100%;
+}
+.zawartosc
+{
+	padding-top: 20px;
+	background-color: blanchedalmond;
+	text-align: justify;
+}
+p 
+{
+	font-family: 'Vollkorn SC', serif;
+	text-align:justify;
+}
+.zawartosc
+footer
+{
+	position:absolute;
+	bottom:0;
+	margin:0;
+	background-color:blanchedalmond;
+	width: 100%;
+	text-align: right;
+}
+iframe
+{
+	position: relative;
+	right: 40%;
+	left:15%;
+}

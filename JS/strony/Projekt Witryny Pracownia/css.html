@@ -1,0 +1,93 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>HTML CSS JavaScript</title>
+	<link href="css/csscss.css" rel="stylesheet" type="text/css">
+	<link href="css/menu.css" rel="stylesheet" type="text/css">
+	<link href="bootstrap-3.3.7-dist/css/bootstrap.css" rel="stylesheet" />
+	<link href="bootstrap-3.3.7-dist/css/bootstrap-theme.css" rel="stylesheet" />
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href="https://fonts.googleapis.com/css?family=Vollkorn+SC" rel="stylesheet">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+<body>
+<div id="tlo" class="container-fluid">
+<div id="baner" class="col-md-12 col-xs-12 col-sm-12">
+	<img src="obrazy/logo.png" alt="logo html css js wysywig">
+</div>
+<nav id="menu" class="col-md-12 col-sm-12 col-xs-12">
+	<ol>
+		<li><a href="index.html">Start</a></li>
+		<li><a href="language.html" class="bg-info">Języki</a>
+			<ul>
+				<li><a href="html.html">HTML</a></li>
+				<li><a href="css.html" class="bg-info">CSS</a></li>
+				<li><a href="javascript.html">JavaScript</a></li>
+			</ul>
+		
+		</li>
+		<li><a href="WYSIWYG.html">WYSIWYG</a></li>
+		<li><a href="galeria.html">Galeria</a></li>
+		<li><a href="mapastrony.html">Mapa strony</a></li>
+	</ol>
+</nav>
+<div class="row">
+	<div class="naglowek col-md-12 col-xs-12 col-sm-12">
+		<img src="obrazy/css.png" alt="html">
+	</div>
+</div>
+<div class="row">
+	<div class="col-md-1 col-xs-1 col-sm-1">
+	</div>
+	<div class="zawartosc col-md-10 col-xs-10 col-sm-10">
+		<p>
+		<iframe width="560" height="315" src="https://www.youtube.com/embed/RJEKMbD_kEk" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen>
+		</iframe>
+		Kaskadowe arkusze stylów (ang. Cascading Style Sheets, w skrócie CSS) to język służący do opisu formy prezentacji (wyświetlania) stron WWW. CSS został opracowany przez organizację W3C w 1996 r. jako potomek języka DSSSL przeznaczony do używania w połączeniu z SGML-em. Pierwszy szkic CSS zaproponował w 1994 r. Håkon Wium Lie.
+		Arkusz stylów CSS to lista dyrektyw (tzw. reguł) ustalających w jaki sposób ma zostać wyświetlana przez przeglądarkę internetową zawartość wybranego elementu (lub elementów) (X)HTML lub XML. Można w ten sposób opisać wszystkie pojęcia odpowiedzialne za prezentację elementów dokumentów internetowych, takie jak rodzina czcionek, kolor tekstu, marginesy, odstęp międzywierszowy lub nawet pozycja danego elementu względem innych elementów bądź okna przeglądarki. Wykorzystanie arkuszy stylów daje znacznie większe możliwości pozycjonowania elementów na stronie, niż oferuje sam (X)HTML.
+		</p>
+	<h3>HISTORIA</h3>
+	<p>
+		Pierwotnie HTML był językiem wyłącznie do opisu struktury dokumentu. Jednak z czasem zrodziła się potrzeba ożywienia wyglądu takich dokumentów. Powoli dodawano nowe znaczniki do HTML pozwalające kontrolować kolory, typografię, dodawać nowe media (np. obrazki). Te niestandardowe rozszerzenia realizowane były przez najpopularniejszych producentów przeglądarek bez porozumienia z drugim. Doprowadziło to do zaimplementowania nowych znaczników działających w konkretnej grupie przeglądarek i nie działających w innych przeglądarkach. Projektanci zostali zmuszeni do wysyłania do klienta różnych wersji tej samej witryny w zależności od użytej przeglądarki, uzyskanie identycznego wyglądu w różnych przeglądarkach było praktycznie niemożliwe. Håkon Wium Lie jako pierwszy zaproponował CHSS (Cascading HTML Style Sheets) w październiku 1994 roku. Później Lie i Bert Bos pracowali wspólnie nad standardem CSS (literka H została usunięta ze względu na możliwość stosowania stylów do innych podobnych do HTML języków).
+
+		W tym czasie została utworzona organizacja World Wide Web Consortium, która z Lie’em i Bosem na czele przejęła prace nad CSS. Pod koniec 1996 roku wydano oficjalną dokumentację CSS, Kaskadowe arkusze stylów, poziom 1.
+
+		W3C zatwierdziło dwa oficjalne standardy CSS: CSS 1 i CSS 2, a także dnia 7 czerwca 2011 roku standard CSS 2.1.
+
+		Trwają również prace nad CSS3. Wersja ta w stosunku do poprzedników wzbogaci się o wiele selektorów oraz właściwości, nowością jest także modułowy charakter języka – nie będzie to już jednolita rekomendacja, lecz kilkadziesiąt osobnych dokumentów, co pozwoli na włączanie lub wyłączanie odpowiednich modułów w przeglądarkach w zależności od chwilowych potrzeb.	
+	</p>
+	<h3>Cele</h3>
+	<p>
+	Przed pojawieniem się CSS wszystkie informacje dotyczące wyglądu dokumentów HTML (między innymi rodzaj i kolor czcionki, ułożenie, marginesy) zawarte były w znacznikach HTML. Język CSS umożliwia przeniesienie tych informacji do osobnego pliku. Skutkuje to uproszczeniem i zwiększeniem przejrzystości samego dokumentu HTML. Bez użycia CSS w przypadku definiowania stylu dla nagłówka (h1) lub podtytułu (h2) jego definicja musiałaby zostać powtórzona w każdym miejscu, w którym pojawia się dana struktura. Efektem takiego działania byłoby zmniejszenie czytelności dokumentu i jego odporności na błędy oraz trudność w utrzymaniu. Dodatkowo, zmiany stylu w jednym z miejsc wiązałyby się z koniecznością wprowadzania zmian w każdym miejscu wystąpienia. CSS pozwala na rozgraniczenie warstwy prezentacji od struktury. Język ten umożliwia definicję kolorów, czcionek, układu, rozmiarów, marginesów oraz wielu innych cech związanych z warstwą prezentacji.
+	</p>
+	<h3>Zalety i ograniczenia</h3>
+	<p>Największą zaletą CSS jest umożliwienie rozdzielenia warstwy prezentacji od warstwy danych. Dzięki temu możliwe jest definiowanie wielu stylów dla tych samych danych, a sam dokument HTML jest bardziej przejrzysty i łatwiejszy do utrzymania i dalszego rozwinięcia. Dodatkowo w przypadku potrzeby wprowadzenia zmian w definicji stylu wykorzystanego dla elementu występującego wielokrotnie w dokumencie HTML w pliku CSS zmiany są wprowadzane raz, a zmiana jest adaptowana przez wszystkie elementy. Skutkuje to oszczędnością czasu i pracy.
+
+	Z drugiej jednak strony podczas gdy poziome rozmieszczenie jest relatywnie łatwe do wykonania to pionowe rozmieszczenie jest często mało intuicyjne. Proste czynności jak centrowanie elementu pionowo często wymaga skomplikowanych operacji. Oprócz tego CSS uniemożliwia definiowanie nowych zakresów bez względu na aktualną pozycję.</p>
+	<h3>Składnia arkuszy</h3>
+	<p>
+	Arkusz stylów składa się z reguł określających styl dla wybranych elementów dokumentu (HTML, SVG i innych). Reguła składa się z selektora oraz deklaracji. Selektor określa grupę elementów (rzadziej pojedynczy element), którego ma dotyczyć deklaracja. Deklaracja określa formatowanie i składa się z nazwy jednej z właściwości i jej wartości napisanej po dwukropku. Deklaracja musi być otoczona nawiasami klamrowymi.
+	<br>
+	<br>
+		<a>selektor { właściwość: wartość }</a>
+	<br>
+	<br>
+	Dodatkowo możliwe jest grupowanie zarówno selektorów, jak i deklaracji. Zgrupowane selektory rozdziela się przecinkami, a deklaracje średnikami:
+	<br>
+	<br>
+		<a>selektor1, selektor2 { właściwość1: wartość1; właściwość2: wartość2; }</a>
+	<br>
+	<br>
+	Dozwolone jest stosowanie średnika po wszystkich deklaracjach, nie jest jednak dozwolone stosowanie przecinka po ostatnim selektorze. Ponadto niektóre wartości mogą być zgrupowane i podane w ramach jednej deklaracji. W takim wypadku składnia zależy od definicji składni zbiorczej właściwości[21].
+	</p>
+	</div>
+	<div class="col-md-1 col-xs-1 col-sm-1">
+	</div>
+</div>
+<footer class="col-md-12">Jan Biały &#169;</footer>
+</div>
+</body>
+</html>
