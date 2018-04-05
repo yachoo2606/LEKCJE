@@ -1,0 +1,39 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>JS</title>
+</head>
+<body>
+	<form name="formularz">
+		<input type="text" name="klasa"/>
+		<input type="password" name="haslo"/>
+		<input type="button" value="start" name="guzik" onclick="klik()"/>
+	</form>
+	<h1 id="wynikklasa"></h1>
+	<h1 id="wynikhaslo"></h1>
+	<script>
+	function klik()
+		{
+			var a = formularz.klasa.value;
+			var b = formularz.haslo.value;
+			
+			try
+			{
+				if(isNaN(a)) throw "Klasa mmusi być liczbą";
+				if(a.length>1) throw "jedna cyfra";
+			}
+			catch(error)
+			{
+				alert(error);
+			}
+			finally
+			{
+				document.getElementById('wynikklasa').innerHTML = a;
+				document.getElementById('wynikhaslo').innerHTML = b;
+			}
+		}
+	
+	</script>
+</body>
+</html>

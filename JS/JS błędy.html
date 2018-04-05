@@ -1,0 +1,56 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>JS</title>
+</head>
+<body>
+	<!--Przeprowadź walidacje formularza-->
+	<form name="f">
+		liczba A <input type="text" name="A" id="muka1"><br/>
+		liczba B <input type="text" name="B" id="muka2"><br/>
+		<input  type="button" value="o" onClick="O()">
+		<input  type="button" value="P" onClick="P()">
+	</form>
+	<h1 id="wynik"></h1>
+	<script>
+	function sprawdz()
+		{
+			try
+			{
+				if(f.A.value=="") throw "Pole nie może być puste: Liczba A";
+				if(f.B.value=="") throw "Pole nie może być puste: Liczba B";
+				if(isNaN(f.A.value)) throw "Podaj liczbe: Liczba A";
+				if(isNaN(f.B.value)) throw "Podaj liczbe: Liczba B";
+				if(f.A.value<=0) throw "Musi być większa od 0: Liczba A";
+				if(f.B.value<=0) throw "Musi być większa od 0: Liczba B";
+				if(f.A.value>100) throw "Musi być mniejsza od 100: Liczba A";
+				if(f.B.value>100) throw "Musi być mniejsza od 100: Liczba B";
+				return false;
+			}
+			catch(error)
+			{
+				alert(error);
+				return true;
+			}
+		}
+	function O()
+		{
+			if (sprawdz()) return true;
+			var a=Number(f.A.value);
+			var b=Number(f.B.value);
+			var wynik= 2*a+2*b;
+			document.getElementById('wynik').innerHTML = wynik;
+		}
+		function P()
+		{
+			if (sprawdz()) return true;
+			var a=Number(f.A.value);
+			var b=Number(f.B.value);
+			var wynik= a*b;
+			document.getElementById('wynik').innerHTML = wynik;
+		}
+	
+	</script>
+</body>
+</html>

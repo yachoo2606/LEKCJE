@@ -1,0 +1,50 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>JS</title>
+</head>
+<body>
+	<h1 id="wynikage"></h1>
+	<h1 id="wyniknick"></h1>
+	<script>
+		
+		function func()
+		{
+			var age = prompt('Podaj wiek: ');
+			
+			try
+			{
+				if(age=="") throw "Nie może być puste";
+				if(isNaN(age)) throw "WIek musi być liczbą";
+				if(age<18) throw "Musisz być pełnoletni";
+				if(age>100) throw "nie oszukuj wieku";
+				document.getElementById('wynikage').innerHTML = ('Witamy! Masz: ') + age + ('lat.'+'<br/>');
+			}
+			catch(error)
+			{
+				alert(error);
+				func();
+			}
+		}
+		function nick()
+		{
+			var nik = prompt('Podaj nick: ');
+			try
+			{
+				if(nik.length<5) throw "Za krótki nick";
+				if(nik.length>10) throw "Za długi nick";
+				document.getElementById('wyniknick').innerHTML = ('Witaj: ') + nik +'<br>';
+				
+			}
+			catch(error)
+			{
+				alert(error);
+				nick();
+			}
+		}
+		nick();
+		func();
+	</script>
+</body>
+</html>

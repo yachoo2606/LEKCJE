@@ -1,0 +1,32 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>JS</title>
+</head>
+<body>
+	<h1 id="wynik"></h1>
+	<script>
+		
+		function func()
+		{
+			var age = prompt('Podaj wiek: ');
+			
+			try
+			{
+				if(age=="") throw "Nie może być puste";
+				if(isNaN(age)) throw "WIek musi być liczbą";
+				if(age<18) throw "Musisz być pełnoletni";
+				if(age>100) throw "nie oszukuj wieku";
+				document.getElementById('wynik').innerHTML = ('Witamy! Masz: ') + age + ('lat.');
+			}
+			catch(error)
+			{
+				alert(error);
+				func();
+			}
+		}
+		func();
+	</script>
+</body>
+</html>
