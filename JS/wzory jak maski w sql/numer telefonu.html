@@ -1,0 +1,28 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Telefon</title>
+</head>
+<body>
+	<script>
+		
+		function sprawdzanietelefnu()
+		{
+			try
+			{
+			var numer=prompt('Podaj nuemr telefonu: ');
+			var w_numer=/^[+48][0-9]{11}$/;
+				if(!w_numer.test(numer)) throw "Zły numer podałeś....";
+				document.write("Wpisałeś: "+numer);
+			}
+			catch(error)
+				{
+					alert(error);
+					sprawdzanietelefnu();
+				}
+		}
+		sprawdzanietelefnu();
+	</script>
+</body>
+</html>

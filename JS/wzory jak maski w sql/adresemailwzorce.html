@@ -1,0 +1,30 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>JS</title>
+</head>
+<body>
+	
+	<script>
+		function email()
+		{
+			try
+			{
+			var adres = prompt("Podaj adres e-mail: ");
+			var w_adres = /^[a-zA-Z0-9]{,30}+\@+[a-zA-Z0-9]{15}\.[a-z]{,15}$/;
+			if(w_adres.test(adres)) throw "Zły format E-maila";
+				document.write("Wprowadziłeś e-mail: "+adres)
+			}
+			catch(error)
+				{
+					alert(error);
+					email();
+				}
+		}
+		email();
+	
+	
+	</script>
+</body>
+</html>
